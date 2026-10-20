@@ -1,0 +1,13 @@
+{
+  "name": "calc-api-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright API tests template for learning parametrization",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "typescript": "^7.0.2"
+  }
+}
