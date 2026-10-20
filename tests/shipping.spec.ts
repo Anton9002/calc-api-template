@@ -13,7 +13,7 @@ test('shipping: EE, 2.5 kg, express', async ({ request }) => {
 const cases = [
   { country: 'EE', weightKg: 1, express: false, cost: 3, days: 2 },
   { country: 'LV', weightKg: 5, express: false, cost: 10, days: 5 },
-  { country: 'US', weightKg: 20, express: true, cost: 52.5, days: 4 },
+  // TODO (students): add more cases: US, 20 kg, express=true (cost 52.5, days 4) and other zones
 ];
 
 for (const { country, weightKg, express, cost, days } of cases) {

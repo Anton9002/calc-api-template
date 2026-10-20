@@ -13,8 +13,7 @@ test('tickets: age 17, SAT is CHILD for 7', async ({ request }) => {
 const cases = [
   { age: 6, day: 'MON', category: 'FREE', price: 0 },
   { age: 7, day: 'FRI', category: 'CHILD', price: 5 },
-  { age: 30, day: 'SUN', category: 'ADULT', price: 12 },
-  { age: 65, day: 'WED', category: 'SENIOR', price: 7 },
+  // TODO (students): add more cases: ADULT (age 30, SUN, 12), SENIOR (age 65, WED, 7)
 ];
 
 for (const { age, day, category, price } of cases) {

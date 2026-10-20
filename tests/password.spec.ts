@@ -16,8 +16,7 @@ test('password: "abc" is invalid', async ({ request }) => {
 const cases = [
   { password: 'Abcdef1!', valid: true, errors: [] },
   { password: 'ABCDEFG1!', valid: false, errors: ['NO_LOWERCASE'] },
-  { password: 'Abcdefg!', valid: false, errors: ['NO_DIGIT'] },
-  { password: 'Abcdef 1!', valid: false, errors: ['HAS_SPACE'] },
+  // TODO (students): add more cases: NO_DIGIT, HAS_SPACE and other rules
 ];
 
 for (const { password, valid, errors } of cases) {

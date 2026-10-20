@@ -13,8 +13,7 @@ test('turnover tax: EE, 19.99', async ({ request }) => {
 const cases = [
   { country: 'EE', amount: 100, tax: 24, gross: 124, rate: 24 },
   { country: 'LV', amount: 19.99, tax: 4.2, gross: 24.19, rate: 21 },
-  { country: 'FI', amount: 10, tax: 2.55, gross: 12.55, rate: 25.5 },
-  { country: 'SE', amount: 200, tax: 50, gross: 250, rate: 25 },
+  // TODO (students): add more cases: FI (25.5%) and SE (25%)
 ];
 
 for (const { country, amount, tax, gross, rate } of cases) {
