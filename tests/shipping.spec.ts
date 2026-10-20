@@ -26,12 +26,15 @@ for (const { country, weightKg, express, cost, days } of cases) {
 }
 
 // TODO (students): parametrize over zones (EE / EU / rest of world) and weight boundaries 1, 1.01, 5, 5.01, 20
+// Use calculateShipping (without express)
 test.fixme('shipping: tariffs by zone and weight boundaries', async () => {});
 
 // TODO (students): express = true, cost x 1.5 rounded to cents, fewer days
+// Use calculateShippingExpress
 test.fixme('shipping: express surcharge and days', async () => {});
 
 // TODO (students): 400 for country "ee" / "XX", weightKg 0 / -1 / 20.01 / "abc", express "yes"
+// Use calculateShipping for country and weightKg, calculateShippingExpress for express
 test.fixme('shipping: invalid params return 400', async () => {});
 
 // TODO (students): GET on an unknown URL returns 404
